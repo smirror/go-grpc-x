@@ -58,7 +58,7 @@ func callDownload(client pb.FileServiceClient) {
 
 func CallUpload(client pb.FileServiceClient) {
 	filename := "sports.txt"
-	path := "/home/smirror/project/grpc-lesson/storage/" + filename
+	path := "/home/smirror/project/go-grpc-x/storage/" + filename
 
 	file, err := os.Open(path)
 	if err != nil {
@@ -99,7 +99,7 @@ func CallUpload(client pb.FileServiceClient) {
 
 func CallUploadAndNotifyProgress(client pb.FileServiceClient) {
 	filename := "sports.txt"
-	path := "/home/smirror/project/grpc-lesson/storage/" + filename
+	path := "/home/smirror/project/go-grpc-x/storage/" + filename
 
 	file, err := os.Open(path)
 	if err != nil {
